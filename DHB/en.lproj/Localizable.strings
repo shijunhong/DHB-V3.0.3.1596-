@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  DHB
+
+  Created by 阿商信息技术有限公司 on 15/10/20.
+  Copyright © 2015年 阿商信息技术有限公司. All rights reserved.
+*/
+"首页"="HOME";
+"商品"="PRODUCT";
+"订单"="ORDER";
+"消息"="MESSAGE";
+"我的"="MINE";
+"往下拉刷新数据..."="Pull down to refresh status";
+"往上拉刷新数据..."="Pull up to load more";
+"释放刷新数据..."="Release to load more";
+"刷新中..."="Loading Status";
+"刷新完成..."="Over Status";
+"没有更多了~"="Load Over";
+"最后刷新时间: %@"="Last refresh time: %@";
+"暂无厂家名称"="No manufacturer";
+"搜索"="Search";
+"热词搜索"="HotKey";
+"历史搜索"="History Search";
+"清空历史搜索"="Clean History";
+"完成"="Done";
+"分类"="Category";
+"￥"="$";
+"取消订单"="Cancel Order";
+"申请退货"="Return of Goods";
+"订单留言"="Messages Order";

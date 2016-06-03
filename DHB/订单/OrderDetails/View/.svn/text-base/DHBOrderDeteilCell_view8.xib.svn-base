@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHBOrderDetailCell">
+            <connections>
+                <outlet property="image_cell8_img" destination="Pp8-Uf-O2X" id="xcs-0I-6k2"/>
+                <outlet property="name_cell8_lb" destination="D2I-yP-Ubb" id="5Vi-jz-gpD"/>
+                <outlet property="type_cell8_lb" destination="MVm-ci-n5k" id="rIM-i6-Xzn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pp8-Uf-O2X">
+                    <rect key="frame" x="15" y="12" width="19" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="4pC-Dw-WPH"/>
+                        <constraint firstAttribute="width" constant="19" id="Vsj-mf-Yk6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2I-yP-Ubb">
+                    <rect key="frame" x="49" y="14" width="131" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="131" id="hQr-nd-Ebm"/>
+                        <constraint firstAttribute="height" constant="15" id="oTa-0U-MOW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVm-ci-n5k">
+                    <rect key="frame" x="150" y="15" width="192" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="192" id="L6Q-BP-UWb"/>
+                        <constraint firstAttribute="height" constant="15" id="RbD-72-hBi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="p1k-Aa-Mfu">
+                    <rect key="frame" x="343" y="11" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="6la-7q-NTe"/>
+                        <constraint firstAttribute="width" constant="22" id="Zh6-zf-PUt"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="D2I-yP-Ubb" firstAttribute="centerY" secondItem="Pp8-Uf-O2X" secondAttribute="centerY" id="0AE-ld-UeI"/>
+                <constraint firstItem="MVm-ci-n5k" firstAttribute="centerY" secondItem="p1k-Aa-Mfu" secondAttribute="centerY" id="Hef-nX-Ufa"/>
+                <constraint firstItem="D2I-yP-Ubb" firstAttribute="leading" secondItem="Pp8-Uf-O2X" secondAttribute="trailing" constant="15" id="RJn-7X-ecM"/>
+                <constraint firstItem="p1k-Aa-Mfu" firstAttribute="centerY" secondItem="Pp8-Uf-O2X" secondAttribute="centerY" id="RWq-XU-Ak2"/>
+                <constraint firstItem="Pp8-Uf-O2X" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RZ1-91-A29"/>
+                <constraint firstItem="Pp8-Uf-O2X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Vup-25-NhO"/>
+                <constraint firstItem="p1k-Aa-Mfu" firstAttribute="leading" secondItem="MVm-ci-n5k" secondAttribute="trailing" constant="1" id="oXG-79-mNQ"/>
+                <constraint firstAttribute="trailing" secondItem="p1k-Aa-Mfu" secondAttribute="trailing" constant="10" id="ovA-HC-vCE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="116.5" y="288.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.png" width="22" height="22"/>
+    </resources>
+</document>

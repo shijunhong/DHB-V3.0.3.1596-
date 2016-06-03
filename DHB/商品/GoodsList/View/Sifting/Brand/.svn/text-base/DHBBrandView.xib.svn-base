@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHBGoodsViewController">
+            <connections>
+                <outlet property="brand_tableView" destination="BRp-Hp-xLU" id="oH8-ez-HT2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOr-0h-Wea">
+                    <rect key="frame" x="0.0" y="65" width="375" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品牌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yME-cU-xdB">
+                            <rect key="frame" x="104" y="0.0" width="168" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="168" id="CbW-3a-MAc"/>
+                                <constraint firstAttribute="height" constant="45" id="Q76-Ho-yeM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWB-pH-4lX">
+                            <rect key="frame" x="0.0" y="44" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="hks-ra-Bdw"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="nWB-pH-4lX" secondAttribute="bottom" id="FyL-TO-BMf"/>
+                        <constraint firstItem="yME-cU-xdB" firstAttribute="centerX" secondItem="EOr-0h-Wea" secondAttribute="centerX" id="Kzo-M8-k1Q"/>
+                        <constraint firstAttribute="trailing" secondItem="nWB-pH-4lX" secondAttribute="trailing" id="MXe-cE-vAI"/>
+                        <constraint firstItem="nWB-pH-4lX" firstAttribute="leading" secondItem="EOr-0h-Wea" secondAttribute="leading" id="c75-nd-2ZJ"/>
+                        <constraint firstItem="yME-cU-xdB" firstAttribute="top" secondItem="EOr-0h-Wea" secondAttribute="top" id="dp2-sI-Sum"/>
+                        <constraint firstAttribute="height" constant="45" id="j6y-uz-MjV"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BRp-Hp-xLU">
+                    <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dyO-oT-pGj"/>
+                        <outlet property="delegate" destination="-1" id="I3P-j7-3Kl"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EOr-0h-Wea" secondAttribute="trailing" id="7ld-GB-XiF"/>
+                <constraint firstAttribute="bottom" secondItem="BRp-Hp-xLU" secondAttribute="bottom" id="9cO-UB-dCg"/>
+                <constraint firstItem="EOr-0h-Wea" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="65" id="Er0-Qt-7jb"/>
+                <constraint firstItem="BRp-Hp-xLU" firstAttribute="top" secondItem="EOr-0h-Wea" secondAttribute="bottom" id="Ifg-Dm-pGa"/>
+                <constraint firstItem="EOr-0h-Wea" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bhh-QI-8RX"/>
+                <constraint firstAttribute="trailing" secondItem="BRp-Hp-xLU" secondAttribute="trailing" id="hS6-3m-fai"/>
+                <constraint firstItem="BRp-Hp-xLU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oJn-Pj-Ky3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

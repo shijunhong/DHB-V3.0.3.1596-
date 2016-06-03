@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[DHBCommonViewController AddShoppingCarBadgeNum]:DHBCommonViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = " [[ParameterPublic sharedManagered] shoppingCarBadgeView]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RBCustomDatePickerView setDatePickerStyle]:RBCustomDatePickerView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.size.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DHBGoodsViewController goodsListServiceComplete:isSuccess:]:DHBGoodsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "service">
+            </PersistentString>
+            <PersistentString
+               value = "isSuccess">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MainPageViewController tabBar:didSelectItem:]:MainPageViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[item title]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DHBCommonViewController viewDidLoad]:DHBCommonViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[ParameterPublic sharedManagered] company_name]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DHBGoodsDetailsCell addFloor_3]:DHBGoodsDetailsCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "size.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DHBInvoiceViewController ZZInvoice]:DHBInvoiceViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.ptInvoice_content.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DHBBaseNetworkRequest postDataSuccess:failure:]:DHBBaseNetworkRequest.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self parameters]">
+            </PersistentString>
+            <PersistentString
+               value = "[self fullURLPath]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DHBCommonViewController DHBSupplierListService_Compelete:isSueccess:]:DHBCommonViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.supplierService">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DHBNoDataView showMessageInParentView:message:]:DHBNoDataView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "parentView.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DHBShoppingCarOrderView tableView:numberOfRowsInSection:]:DHBShoppingCarOrderView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ParameterPublic sharedManagered]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DHBUploadImageView photoImageView]:DHBUploadImageView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DHBLoginMainView addInputView]:DHBLoginMainView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "INPUT_MARGIN_LEFT">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

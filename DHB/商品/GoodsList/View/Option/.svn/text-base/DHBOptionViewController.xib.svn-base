@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHBGoodsViewController">
+            <connections>
+                <outlet property="addShoppingCar_btn" destination="oV5-BV-xc6" id="oXU-x4-6e2"/>
+                <outlet property="follow_btn" destination="o4G-Ye-9LH" id="hSs-Q8-moX"/>
+                <outlet property="option_tableView" destination="Ap4-B0-ndj" id="LDK-Py-yOE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="sZa-83-Exn">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oez-QF-rbO">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBi-tf-mRI">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="JP5-no-v81"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4G-Ye-9LH">
+                            <rect key="frame" x="0.0" y="1" width="187" height="48"/>
+                            <state key="normal" title="  收藏" image="like.png">
+                                <color key="titleColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" image="like2.png"/>
+                            <connections>
+                                <action selector="focusAction:" destination="-1" eventType="touchUpInside" id="GA1-Hr-ekh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oV5-BV-xc6">
+                            <rect key="frame" x="187" y="1" width="188" height="48"/>
+                            <color key="backgroundColor" red="0.99607843139999996" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="加入购物车">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="joinShoppingCarAction:" destination="-1" eventType="touchUpInside" id="xtC-Om-W0r"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="o4G-Ye-9LH" firstAttribute="leading" secondItem="Oez-QF-rbO" secondAttribute="leading" id="0rD-Kc-YhV"/>
+                        <constraint firstAttribute="height" constant="49" id="1Ew-pn-5KL"/>
+                        <constraint firstAttribute="trailing" secondItem="tBi-tf-mRI" secondAttribute="trailing" id="MEA-MG-z4d"/>
+                        <constraint firstItem="tBi-tf-mRI" firstAttribute="leading" secondItem="Oez-QF-rbO" secondAttribute="leading" id="N3C-od-xJG"/>
+                        <constraint firstItem="o4G-Ye-9LH" firstAttribute="top" secondItem="tBi-tf-mRI" secondAttribute="bottom" id="P6C-oX-XI8"/>
+                        <constraint firstItem="oV5-BV-xc6" firstAttribute="leading" secondItem="o4G-Ye-9LH" secondAttribute="trailing" id="WVF-p0-BZd"/>
+                        <constraint firstItem="oV5-BV-xc6" firstAttribute="top" secondItem="tBi-tf-mRI" secondAttribute="bottom" id="Xgu-DC-1KK"/>
+                        <constraint firstAttribute="bottom" secondItem="oV5-BV-xc6" secondAttribute="bottom" id="Xyg-Nr-n4C"/>
+                        <constraint firstItem="oV5-BV-xc6" firstAttribute="width" secondItem="o4G-Ye-9LH" secondAttribute="width" constant="1" id="acn-el-bF0"/>
+                        <constraint firstItem="tBi-tf-mRI" firstAttribute="top" secondItem="Oez-QF-rbO" secondAttribute="top" id="btq-bz-pFe"/>
+                        <constraint firstItem="oV5-BV-xc6" firstAttribute="leading" secondItem="o4G-Ye-9LH" secondAttribute="trailing" id="eJx-7q-6bN"/>
+                        <constraint firstAttribute="trailing" secondItem="oV5-BV-xc6" secondAttribute="trailing" id="fHr-9V-Bu0"/>
+                        <constraint firstAttribute="bottom" secondItem="o4G-Ye-9LH" secondAttribute="bottom" id="pxG-kL-NOh"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ap4-B0-ndj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="r8u-mv-pW3"/>
+                        <outlet property="delegate" destination="-1" id="ukj-o8-voH"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ap4-B0-ndj" secondAttribute="trailing" id="LcS-jH-4Vd"/>
+                <constraint firstItem="Ap4-B0-ndj" firstAttribute="leading" secondItem="sZa-83-Exn" secondAttribute="leading" id="Mtd-dn-JK5"/>
+                <constraint firstAttribute="bottom" secondItem="Oez-QF-rbO" secondAttribute="bottom" id="R5n-4X-5Jb"/>
+                <constraint firstItem="Ap4-B0-ndj" firstAttribute="top" secondItem="sZa-83-Exn" secondAttribute="top" id="gg7-8G-pFR"/>
+                <constraint firstItem="Oez-QF-rbO" firstAttribute="leading" secondItem="sZa-83-Exn" secondAttribute="leading" id="hsL-gh-GzY"/>
+                <constraint firstItem="Oez-QF-rbO" firstAttribute="top" secondItem="Ap4-B0-ndj" secondAttribute="bottom" id="km6-Zz-uvK"/>
+                <constraint firstAttribute="trailing" secondItem="Oez-QF-rbO" secondAttribute="trailing" id="ma8-Aq-adU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="555.5" y="353.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="like.png" width="21" height="18"/>
+        <image name="like2.png" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHBOrderListViewController">
+            <connections>
+                <outlet property="status_tableView" destination="BI1-Vf-1td" id="ENe-7Q-aOa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12W-DT-c02">
+                    <rect key="frame" x="0.0" y="65" width="375" height="45"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-In-QWc">
+                            <rect key="frame" x="0.0" y="44" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="5GV-0B-Eyv"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBd-7S-nTq">
+                            <rect key="frame" x="104" y="0.0" width="168" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="168" id="Kbw-lM-UrM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="g1c-In-QWc" secondAttribute="bottom" id="98u-qM-p5p"/>
+                        <constraint firstItem="g1c-In-QWc" firstAttribute="leading" secondItem="12W-DT-c02" secondAttribute="leading" id="Fez-Rh-HgM"/>
+                        <constraint firstAttribute="height" constant="45" id="OTn-O8-0GD"/>
+                        <constraint firstAttribute="trailing" secondItem="g1c-In-QWc" secondAttribute="trailing" id="hVS-pQ-l2h"/>
+                        <constraint firstAttribute="bottom" secondItem="FBd-7S-nTq" secondAttribute="bottom" id="hhG-qJ-dEW"/>
+                        <constraint firstItem="FBd-7S-nTq" firstAttribute="centerX" secondItem="12W-DT-c02" secondAttribute="centerX" id="pba-XY-R3X"/>
+                        <constraint firstItem="FBd-7S-nTq" firstAttribute="top" secondItem="12W-DT-c02" secondAttribute="top" id="vMS-fD-w3R"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BI1-Vf-1td">
+                    <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PL1-Zi-30c"/>
+                        <outlet property="delegate" destination="-1" id="xZh-58-MYl"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BI1-Vf-1td" secondAttribute="bottom" id="1E3-fk-ajh"/>
+                <constraint firstAttribute="trailing" secondItem="12W-DT-c02" secondAttribute="trailing" id="2Ou-Uj-QPQ"/>
+                <constraint firstItem="BI1-Vf-1td" firstAttribute="top" secondItem="12W-DT-c02" secondAttribute="bottom" id="IYS-s1-s23"/>
+                <constraint firstAttribute="trailing" secondItem="BI1-Vf-1td" secondAttribute="trailing" id="UcK-fH-bJW"/>
+                <constraint firstItem="12W-DT-c02" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XRj-FL-UhO"/>
+                <constraint firstItem="BI1-Vf-1td" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ed8-Dj-dQa"/>
+                <constraint firstItem="12W-DT-c02" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="65" id="rYL-9b-Eas"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

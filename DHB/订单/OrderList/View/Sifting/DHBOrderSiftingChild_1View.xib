@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHBOrderListViewController">
+            <connections>
+                <outlet property="pay_status_tableView" destination="0og-mH-PtU" id="ojl-pb-jWq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9L-0y-6ND">
+                    <rect key="frame" x="0.0" y="65" width="375" height="45"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qs8-cv-qGD">
+                            <rect key="frame" x="0.0" y="44" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="gIQ-rd-3wZ"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="付款状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGS-Pe-sSH">
+                            <rect key="frame" x="104" y="0.0" width="168" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="168" id="BlP-H1-C6l"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qs8-cv-qGD" secondAttribute="trailing" id="1NF-wG-8mm"/>
+                        <constraint firstAttribute="height" constant="45" id="EPZ-ae-juH"/>
+                        <constraint firstItem="aGS-Pe-sSH" firstAttribute="top" secondItem="l9L-0y-6ND" secondAttribute="top" id="KZl-D9-a0i"/>
+                        <constraint firstAttribute="bottom" secondItem="qs8-cv-qGD" secondAttribute="bottom" id="fft-Tn-rYJ"/>
+                        <constraint firstAttribute="bottom" secondItem="aGS-Pe-sSH" secondAttribute="bottom" id="hkK-aM-GLg"/>
+                        <constraint firstItem="aGS-Pe-sSH" firstAttribute="centerX" secondItem="l9L-0y-6ND" secondAttribute="centerX" id="jkV-JC-74m"/>
+                        <constraint firstItem="qs8-cv-qGD" firstAttribute="leading" secondItem="l9L-0y-6ND" secondAttribute="leading" id="pag-W8-n5n"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0og-mH-PtU">
+                    <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="BqO-TO-39f"/>
+                        <outlet property="delegate" destination="-1" id="17e-qU-Kr9"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0og-mH-PtU" firstAttribute="top" secondItem="l9L-0y-6ND" secondAttribute="bottom" id="2GA-3V-XjH"/>
+                <constraint firstAttribute="trailing" secondItem="0og-mH-PtU" secondAttribute="trailing" id="Nk9-cm-cCf"/>
+                <constraint firstAttribute="bottom" secondItem="0og-mH-PtU" secondAttribute="bottom" id="YHl-v2-IdJ"/>
+                <constraint firstItem="l9L-0y-6ND" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="65" id="ndz-ld-Xd5"/>
+                <constraint firstItem="l9L-0y-6ND" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pNs-dv-zMu"/>
+                <constraint firstItem="0og-mH-PtU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rUh-9s-1Sp"/>
+                <constraint firstAttribute="trailing" secondItem="l9L-0y-6ND" secondAttribute="trailing" id="xMv-Nw-DJy"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>
